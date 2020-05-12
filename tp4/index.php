@@ -1,12 +1,5 @@
 <?php
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=tp_noté;charset=utf8', 'root', 'Ayfant@n0cxx');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +10,9 @@ catch(Exception $e)
 </head>
 <body>
 		<h1>Bienvenue !</h1><br>
-		Cette application vous permet de vous inscrire à notre procain flashmob.
-		<form>
+		Cette application vous permet de vous inscrire à notre prochaine flashmob.
+		<form method="post" action="inscription/inscription.php">
+			<img src="images/calendrier.jpg">
 			<input type="submit" value="Inscription">
 		</form>
 </body>
